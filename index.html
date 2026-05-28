@@ -1,214 +1,669 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>힙플레이스 카페 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #3b82f6;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>마포 셔츠룸 | 힙플레이스 카페 - 마포의 중심, 거침없는 커피</title>
+    <meta name="description" content="마포 셔츠룸 — 힙플레이스 카페의 정수. 스트리트 브루탈리즘 감성, 강렬한 커피, 그리고 자유로운 영혼을 위한 공간. 마포에서 가장 거친 셔츠룸을 경험하라.">
+    <meta name="keywords" content="마포 셔츠룸, 마포 카페, 힙플레이스, 마포 힙한 카페, 셔츠룸 마포, 마포 커피, 스트리트 카페, 브루탈리즘 카페,마포 맛집,마포 데이트,마포 셔츠룸 가격">
+    <meta name="author" content="마포 셔츠룸">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-484.pages.dev/">
+
+    <!-- 브루탈리즘 디자인 시스템 -->
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+
+    <!-- OG 메타 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="마포 셔츠룸 | 힙플레이스 카페 - 거침없는 브루탈리즘">
+    <meta property="og:description" content="마포 셔츠룸 — 힙플레이스 카페의 정수. 스트리트 브루탈리즘 감성, 강렬한 커피, 그리고 자유로운 영혼을 위한 공간.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-484.pages.dev/">
+    <meta property="og:site_name" content="마포 셔츠룸">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='320' font-family='Impact, sans-serif' font-size='120' fill='%23ff3b00' font-weight='bold'%3E셔츠룸%3C/text%3E%3Ctext x='60' y='450' font-family='Impact, sans-serif' font-size='60' fill='%23fff'%3E마포%3C/text%3E%3C/svg%3E">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 셔츠룸 | 힙플레이스 카페">
+    <meta name="twitter:description" content="마포 셔츠룸 — 힙플레이스 카페의 정수. 스트리트 브루탈리즘 감성.">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='320' font-family='Impact, sans-serif' font-size='120' fill='%23ff3b00' font-weight='bold'%3E셔츠룸%3C/text%3E%3Ctext x='60' y='450' font-family='Impact, sans-serif' font-size='60' fill='%23fff'%3E마포%3C/text%3E%3C/svg%3E">
+
+    <!-- JSON-LD 스키마 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "마포 셔츠룸",
+        "description": "마포의 힙플레이스 카페. 스트리트 브루탈리즘 감성의 셔츠룸.",
+        "url": "https://sf-t3-1779642675702-484.pages.dev/",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        },
+        "areaServed": "마포구",
+        "priceRange": "₩₩",
+        "servesCuisine": "Coffee",
+        "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='320' font-family='Impact, sans-serif' font-size='120' fill='%23ff3b00' font-weight='bold'%3E셔츠룸%3C/text%3E%3Ctext x='60' y='450' font-family='Impact, sans-serif' font-size='60' fill='%23fff'%3E마포%3C/text%3E%3C/svg%3E",
+        "sameAs": []
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.7;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.03em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 300;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(59, 130, 246, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* ============================================================
+           BRUTALIST AVANT-GARDE — STREET BRUTALIST + NEON-VOID
+           ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Impact', 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 400;
+            line-height: 1.2;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ===== AIRY SPACE ===== */
+        :root {
+            --section-gap: 120px;
+            --padding-global: 72px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --padding-global: 28px;
+                --section-gap: 72px;
+            }
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            font-family: 'Impact', 'system-ui', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.01em;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 12vw, 6rem);
+            line-height: 0.9;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: clamp(2.8rem, 9vw, 4.5rem);
+            color: #ff3b00;
+            border-left: 6px solid #ff3b00;
+            padding-left: 24px;
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+        }
+
+        p, li, a, blockquote, .review-card {
+            font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 400;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 2px solid #ff3b00;
+            transition: background 0.1s;
+        }
+
+        a:hover {
+            background: #ff3b00;
+            color: #000000;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            padding: 0 var(--padding-global);
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .full-bleed {
+            max-width: none;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        section {
+            margin-bottom: var(--section-gap);
+        }
+
+        .section-gap {
+            height: var(--section-gap);
+        }
+
+        /* ===== BRUTALIST RAW BORDERS ===== */
+        .brutal-border {
+            border: 4px solid #ffffff;
+            padding: 32px;
+            background: #000000;
+        }
+
+        .brutal-border-accent {
+            border: 4px solid #ff3b00;
+            padding: 32px;
+            background: #000000;
+        }
+
+        .brutal-skew {
+            transform: rotate(-1.5deg) skewX(-2deg);
+        }
+
+        .brutal-skew-reverse {
+            transform: rotate(1.5deg) skewX(2deg);
+        }
+
+        /* ===== HEADER / NAV ===== */
+        header {
+            padding: 24px var(--padding-global);
+            border-bottom: 4px solid #ff3b00;
+            background: #000000;
+            position: relative;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Impact', sans-serif;
+            font-size: 2.2rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: none;
+            background: none;
+        }
+
+        .logo span {
+            color: #ff3b00;
+        }
+
+        .logo:hover {
+            background: transparent;
+            color: #ffffff;
+        }
+
+        /* 네비게이션 */
+        nav ul {
+            display: flex;
+            gap: 48px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            font-family: 'Impact', sans-serif;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 4px;
+            color: #ffffff;
+            background: transparent;
+        }
+
+        nav ul li a:hover {
+            border-bottom-color: #ff3b00;
+            background: transparent;
+            color: #ff3b00;
+        }
+
+        /* 햄버거 (모바일) */
+        .hamburger-checkbox {
+            display: none;
+        }
+
+        .hamburger-label {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 8px 0;
+            z-index: 200;
+        }
+
+        .hamburger-label span {
+            display: block;
+            width: 32px;
+            height: 4px;
+            background: #ffffff;
+            transition: 0.2s;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: #000000;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                transform: translateX(100%);
+                transition: transform 0.25s ease;
+                z-index: 150;
+                border-left: 6px solid #ff3b00;
+            }
+
+            nav ul li a {
+                font-size: 2rem;
+            }
+
+            .hamburger-label {
+                display: flex;
+            }
+
+            .hamburger-checkbox:checked ~ nav ul {
+                transform: translateX(0);
+            }
+
+            .hamburger-checkbox:checked ~ .hamburger-label span:nth-child(1) {
+                transform: rotate(45deg) translate(7px, 7px);
+            }
+            .hamburger-checkbox:checked ~ .hamburger-label span:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger-checkbox:checked ~ .hamburger-label span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: var(--padding-global) 0;
+            position: relative;
+            background: #000000;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle at 30% 30%, #ff3b00 0%, #000 70%);
+            opacity: 0.35;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(4rem, 14vw, 7rem);
+            line-height: 0.85;
+            margin-bottom: 8px;
+            text-shadow: 6px 6px 0 #ff3b00;
+            max-width: 900px;
+        }
+
+        .hero-tagline {
+            font-family: 'system-ui', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ff3b00;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            border-left: 6px solid #ff3b00;
+            padding-left: 20px;
+            max-width: 600px;
+        }
+
+        .hero-cta {
+            margin-top: 32px;
+            display: inline-flex;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .btn-brutal {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000000;
+            font-family: 'Impact', sans-serif;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            padding: 16px 48px;
+            border: 4px solid #ffffff;
+            transform: rotate(-1deg);
+            transition: 0.1s;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+        }
+
+        .btn-brutal:hover {
+            background: #ffffff;
+            border-color: #ff3b00;
+            color: #000;
+            transform: rotate(1deg) scale(1.02);
+        }
+
+        .btn-brutal-outline {
+            background: transparent;
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .btn-brutal-outline:hover {
+            background: #ff3b00;
+            color: #000;
+            border-color: #ff3b00;
+        }
+
+        /* ===== ABOUT / INTRO ===== */
+        .intro-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+
+        @media (max-width: 768px) {
+            .intro-block {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+        }
+
+        .intro-block .left {
+            border: 4px solid #ff3b00;
+            padding: 48px 32px;
+            transform: rotate(-1deg);
+            background: #0a0a0a;
+        }
+
+        .intro-block .right {
+            border: 4px solid #ffffff;
+            padding: 48px 32px;
+            transform: rotate(1.5deg);
+            background: #0a0a0a;
+        }
+
+        .intro-block p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .intro-block .big-number {
+            font-family: 'Impact', sans-serif;
+            font-size: 4rem;
+            color: #ff3b00;
+            line-height: 1;
+        }
+
+        /* ===== UGC 리뷰 ===== */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+        }
+
+        .review-card {
+            border: 4px solid #ffffff;
+            padding: 32px 24px;
+            background: #0a0a0a;
+            transform: rotate(var(--rot, 0deg));
+            transition: 0.15s;
+        }
+
+        .review-card:nth-child(odd) {
+            --rot: -1.5deg;
+        }
+
+        .review-card:nth-child(even) {
+            --rot: 1.2deg;
+        }
+
+        .review-card:hover {
+            border-color: #ff3b00;
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .review-card .stars {
+            color: #ff3b00;
+            font-size: 1.8rem;
+            letter-spacing: 6px;
+            margin-bottom: 12px;
+        }
+
+        .review-card blockquote {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-style: normal;
+            border-left: 4px solid #ff3b00;
+            padding-left: 16px;
+        }
+
+        .review-card .author {
+            font-family: 'Impact', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            color: #ff3b00;
+        }
+
+        .review-card .date {
+            font-family: 'system-ui', sans-serif;
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-top: 4px;
+        }
+
+        /* ===== 전화 링크 ===== */
+        .phone-block {
+            background: #0a0a0a;
+            border: 4px solid #ff3b00;
+            padding: 40px;
+            text-align: center;
+            transform: skewX(-2deg);
+        }
+
+        .phone-block a {
+            font-family: 'Impact', sans-serif;
+            font-size: 3rem;
+            color: #ffffff;
+            border-bottom: 6px solid #ff3b00;
+            text-decoration: none;
+            background: transparent;
+        }
+
+        .phone-block a:hover {
+            background: #ff3b00;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .phone-block a {
+                font-size: 2rem;
+            }
+        }
+
+        /* ===== 푸터 ===== */
+        footer {
+            border-top: 4px solid #ff3b00;
+            padding: 48px var(--padding-global);
+            background: #000000;
+            margin-top: var(--section-gap);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 32px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-inner p {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-family: 'system-ui', sans-serif;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .footer-links a {
+            font-family: 'Impact', sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+        }
+
+        .footer-links a:hover {
+            border-bottom-color: #ff3b00;
+        }
+
+        /* ===== UTILITY ===== */
+        .text-accent {
+            color: #ff3b00;
+        }
+
+        .mt-48 {
+            margin-top: 48px;
+        }
+
+        .mb-48 {
+            margin-bottom: 48px;
+        }
+
+        .gap-48 {
+            gap: 48px;
+        }
+
+        .block-brutal {
+            border: 4px solid #ffffff;
+            padding: 32px;
+            background: #0a0a0a;
+        }
+
+        /* 이미지 대체 SVG */
+        .img-placeholder-svg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #111;
+            border: 4px solid #ff3b00;
+            min-height: 200px;
+            font-family: 'Impact', sans-serif;
+            font-size: 1.5rem;
+            color: #ff3b00;
+            text-transform: uppercase;
+            padding: 24px;
+        }
+
+        /* 반응형 추가 조정 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                text-shadow: 4px 4px 0 #ff3b00;
+            }
+            .btn-brutal {
+                font-size: 1.4rem;
+                padding: 14px 32px;
+            }
+            .intro-block .left,
+            .intro-block .right {
+                transform: rotate(0deg);
+                padding: 32px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
+    <!-- 헤더 -->
     <header>
-      <a href="/" class="logo">T3.SWISS</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">SWISS ACCENTED GRID SYSTEM</div>
-      <h1>힙플레이스 카페 리서치 및 기술 인프라 저널</h1>
-      <div class="content">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>힙플레이스 카페</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>힙플레이스 카페: 라이프스타일: 일상 최적화 가이드</h3>
-          <p>바쁘게 흘러가는 도심 라이프 속에서 나만의 시간적 여유와 쾌적한 데일리 습관을 디자인하는 것은 삶의 질을 극대화하는 가장 첫 번째 과제입니다. 미니멀한 마인드와 루틴 설계는 큰 힘...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>힙플레이스 카페: 라이프스타일: 공간 미학과 정리 정돈</h3>
-          <p>가구 배치와 조명 연출 하나만으로 평범한 방을 아늑한 아지트로 변모시키는 공간 정리 팁은 내 멘탈 에너지를 가득 채워주는 보이지 않는 강력한 힘을 발휘하는 일상 속 예술입니다....</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>힙플레이스 카페: 라이프스타일: 디지털 디톡스와 아날로그 쉼표</h3>
-          <p>끊임없이 쏟아지는 푸시 알림과 스마트폰의 피로로부터 온전히 격리된 채, 하루에 단 30분씩이라도 책을 읽거나 명상을 즐기는 아날로그 디톡스 루틴은 정신 건강을 지키는 든든한 방패입...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>라이프스타일 에디터가 강력 추천하는 마포 셔츠룸 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>라이프스타일 에디터가 강력 추천하는 마포 셔츠룸 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
+        <div class="header-inner">
+            <a href="/" class="logo">셔츠<span>룸</span></a>
+            <input type="checkbox" id="hamburger" class="hamburger-checkbox">
+            <label for="hamburger" class="hamburger-label" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">리뷰</a></li>
+                    <li><a href="#contact">연락</a></li>
+                    <li><a href="tel:+821062790862">전화</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 T3.SWISS. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+    </header>
+
+    <main>
+        <!-- 히어로 섹션 -->
+        <section class="hero full-bleed" id="hero">
+            <div class="container hero-content">
+                <h1>마포<br>셔츠룸</h1>
+                <div class="hero-tagline">힙플레이스 카페 · 스트리트 브루탈리즘</div>
+                <div class="hero-cta">
+                    <a href="tel:+821062790862" class="btn-brutal">☏ 전화걸기</a>
+                    <a href="#reviews" class="btn-brutal btn-brutal-outline">리뷰 확인</a>
+                </div>
+            </div>
+            <div style="height:40px;"></div>
+        </section>
+
+        <!-- 어바웃 / 브루탈리즘 소개 -->
+        <section id="about" class="container">
+            <h2>🗿 규칙은 없다</h2>
+            <div class="intro-block">
+                <div class="left">
+                    <div class="big-number">01.</div>
+                    <h3>STREET BRUTAL</h3>
+                    <p>마포 한복판, 셔츠룸은 그냥 카페가 아니다. 원초적인 커피, 거친 콘크리트, 그리고 네가 숨 쉬는 자유. 우리는 부드러운 척 하는 걸 거부한다. 4px 실선, 오버사이즈 타이포, 하이새추레이션 — 모든 게 의도적이다.</p>
 </body>
 </html>
