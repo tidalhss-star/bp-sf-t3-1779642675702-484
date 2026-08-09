@@ -1,354 +1,352 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>마포 셔츠룸 | 정보 — 주소·가격·운영시간·위치</title>
-    <meta name="description" content="마포 셔츠룸 정보 페이지. 위치, 가격, 운영시간, 연락처 — 거친 커피와 자유로운 영혼을 위한 모든 것. 마포 힙플레이스의 진짜 정보는 여기뿐.">
-    <meta name="keywords" content="마포 셔츠룸, 마포 카페 정보, 마포 힙플레이스 위치, 마포 셔츠룸 가격, 마포 셔츠룸 주소, 마포 셔츠룸 운영시간, 마포 카페 주소, 마포 데이트 코스">
-    <meta name="author" content="마포 셔츠룸">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://sf-t3-1779642675702-484.maphoshirts.today/about.html">
-    <!-- 브루탈리즘 디자인 시스템 -->
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="street-neon-void">
-    <meta name="bpaas-pattern" content="nav-present, hamburger-menu, responsive-768, tel-link">
-    <!-- 페이지 용도 -->
-    <meta name="bpaas-page-type" content="info">
-    <meta name="bpaas-location" content="mapo">
-    <meta name="bpaas-main-kw" content="마포 셔츠룸">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap">
-    <style>
-        /* ============================================================
-           BRUTALIST AVANT-GARDE — STREET BRUTALIST + NEON-VOID
-           ============================================================ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        /* ===== AIRY SPACE ===== */
-        :root {
-            --brutal-black: #0a0a0a;
-            --brutal-white: #f0f0f0;
-            --brutal-gray: #8a8a8a;
-            --brutal-accent: #ff3b3b;
-            --brutal-neon: #00ffc8;
-            --brutal-void: #1a1a2e;
-            --brutal-card-bg: #111118;
-            --brutal-border: 2px solid #2a2a2a;
-            --brutal-shadow: 4px 4px 0 rgba(255, 59, 59, 0.3);
-            --max-width: 1200px;
-            --gap: 2rem;
-        }
-        @media (max-width: 768px) {
-            :root {
-                --gap: 1.2rem;
-            }
-        }
-        /* ===== TYPOGRAPHY ===== */
-        h1, h2, h3 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.03em;
-        }
-        h1 {
-            font-size: clamp(2.4rem, 8vw, 4.8rem);
-            line-height: 0.95;
-            color: var(--brutal-white);
-            text-shadow: 2px 2px 0 var(--brutal-accent);
-        }
-        h2 {
-            font-size: clamp(1.8rem, 5vw, 3rem);
-            border-left: 6px solid var(--brutal-accent);
-            padding-left: 1rem;
-            margin: 2rem 0 1.2rem;
-        }
-        h3 {
-            font-size: 1.4rem;
-            margin: 1.5rem 0 0.8rem;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            color: #c0c0c0;
-        }
-        a {
-            color: var(--brutal-neon);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border 0.15s;
-        }
-        a:hover {
-            border-bottom-color: var(--brutal-neon);
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        ul li {
-            padding: 0.4rem 0;
-            border-bottom: 1px dashed #2a2a2a;
-        }
-        ul li::before {
-            content: "▸ ";
-            color: var(--brutal-accent);
-            font-weight: bold;
-        }
-        strong {
-            color: var(--brutal-white);
-        }
-        /* ===== LAYOUT ===== */
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        /* ===== HEADER & NAV ===== */
-        header {
-            background: var(--brutal-void);
-            border-bottom: 3px solid var(--brutal-accent);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 900;
-            color: var(--brutal-white);
-            letter-spacing: -0.05em;
-        }
-        .logo span {
-            color: var(--brutal-accent);
-        }
-        .nav-links {
-            display: flex;
-            gap: 1.8rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .nav-links a {
-            color: #c0c0c0;
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border: none;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-            transition: border 0.2s, color 0.2s;
-        }
-        .nav-links a:hover {
-            color: var(--brutal-white);
-            border-bottom-color: var(--brutal-accent);
-        }
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0.5rem;
-        }
-        .hamburger div {
-            width: 26px;
-            height: 3px;
-            background: var(--brutal-white);
-            margin: 5px 0;
-            transition: 0.3s;
-        }
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                padding: 1rem 0;
-                gap: 1rem;
-                background: var(--brutal-void);
-                border-top: 1px solid #2a2a2a;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .nav-links a {
-                font-size: 1.1rem;
-                padding: 0.5rem 0;
-            }
-        }
-        /* ===== INFO HERO ===== */
-        .info-hero {
-            padding: 4rem 0 2rem;
-            border-bottom: 2px solid #2a2a2a;
-            position: relative;
-        }
-        .info-hero::after {
-            content: "● 마포 셔츠룸 ●";
-            position: absolute;
-            top: 0.5rem;
-            right: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--brutal-gray);
-            letter-spacing: 0.2em;
-            opacity: 0.3;
-        }
-        .info-hero h1 {
-            margin-bottom: 0.8rem;
-        }
-        .info-hero p {
-            font-size: 1.15rem;
-            max-width: 700px;
-            border-left: 3px solid var(--brutal-neon);
-            padding-left: 1rem;
-        }
-        /* ===== INFO GRID ===== */
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--gap);
-            padding: 3rem 0;
-        }
-        .info-card {
-            background: var(--brutal-card-bg);
-            border: var(--brutal-border);
-            padding: 1.8rem 1.4rem;
-            box-shadow: var(--brutal-shadow);
-            transition: transform 0.15s, box-shadow 0.15s;
-        }
-        .info-card:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0 rgba(255, 59, 59, 0.4);
-        }
-        .info-card h3 {
-            font-size: 1.2rem;
-            margin-top: 0;
-            color: var(--brutal-accent);
-            border-bottom: 2px solid #2a2a2a;
-            padding-bottom: 0.5rem;
-        }
-        .info-card p {
-            font-size: 0.95rem;
-        }
-        .info-card .highlight {
-            color: var(--brutal-neon);
-            font-weight: 700;
-        }
-        .info-card .tel-link {
-            display: inline-block;
-            background: var(--brutal-accent);
-            color: #0a0a0a;
-            font-weight: 900;
-            padding: 0.6rem 1.4rem;
-            margin-top: 0.8rem;
-            border: none;
-            text-decoration: none;
-            transition: background 0.2s, color 0.2s;
-        }
-        .info-card .tel-link:hover {
-            background: var(--brutal-neon);
-            color: #0a0a0a;
-        }
-        /* ===== FAQ ===== */
-        .faq-section {
-            padding: 3rem 0 4rem;
-            border-top: 2px solid #2a2a2a;
-        }
-        .faq-item {
-            background: var(--brutal-card-bg);
-            border: var(--brutal-border);
-            padding: 1.4rem 1.5rem;
-            margin-bottom: 1.2rem;
-        }
-        .faq-item strong {
-            color: var(--brutal-accent);
-            display: block;
-            margin-bottom: 0.4rem;
-            font-size: 1.1rem;
-        }
-        .faq-item p {
-            margin: 0;
-            color: #b0b0b0;
-        }
-        /* ===== CTA ===== */
-        .cta-section {
-            text-align: center;
-            padding: 3rem 0;
-            border-top: 2px solid #2a2a2a;
-        }
-        .cta-section h2 {
-            border-left: none;
-            margin-top: 0;
-        }
-        .cta-section .btn {
-            display: inline-block;
-            background: var(--brutal-accent);
-            color: #0a0a0a;
-            font-weight: 900;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            padding: 1rem 2.5rem;
-            text-decoration: none;
-            border: 2px solid var(--brutal-accent);
-            transition: background 0.2s, color 0.2s, border 0.2s;
-            letter-spacing: 0.05em;
-        }
-        .cta-section .btn:hover {
-            background: transparent;
-            color: var(--brutal-accent);
-        }
-        /* ===== FOOTER ===== */
-        footer {
-            background: var(--brutal-void);
-            border-top: 3px solid var(--brutal-accent);
-            padding: 2rem 0;
-            text-align: center;
-            margin-top: auto;
-        }
-        footer p {
-            margin: 0;
-            color: var(--brutal-gray);
-            font-size: 0.85rem;
-        }
-        footer a {
-            color: var(--brutal-neon);
-        }
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            .info-hero h1 {
-                font-size: 2.2rem;
-            }
-            .info-hero p {
-                font-size: 1rem;
-            }
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-            .faq-item {
-                padding: 1rem;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <title>마포 셔츠룸 | 정보 — 주소·가격·운영시간·위치</title>
+ <meta name="description" content="마포 셔츠룸 정보 페이지. 위치, 가격, 운영시간, 연락처 — 거친 커피와 자유로운 영혼을 위한 모든 것. 마포 힙플레이스의 진짜 정보는 여기뿐.">
+ <meta name="keywords" content="마포 셔츠룸, 마포 카페 정보, 마포 힙플레이스 위치, 마포 셔츠룸 가격, 마포 셔츠룸 주소, 마포 셔츠룸 운영시간, 마포 카페 주소, 마포 데이트 코스">
+ <meta name="author" content="마포 셔츠룸">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://sf-t3-1779642675702-484.maphoshirts.today/about.html">
+ <!-- 브루탈리즘 디자인 시스템 -->
+ <meta name="마포 힙플레이스 카페 안내-pattern" content="nav-present, hamburger-menu, responsive-768, tel-link">
+ <!-- 페이지 용도 -->
+ <meta name="마포 힙플레이스 카페 안내-page-type" content="info">
+ <meta name="마포 힙플레이스 카페 안내-location" content="mapo">
+ <meta name="마포 힙플레이스 카페 안내-main-kw" content="마포 셔츠룸">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap">
+ <style>
+ /* ============================================================
+ BRUTALIST AVANT-GARDE — STREET BRUTALIST + NEON-VOID
+ ============================================================ */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+ background: #0a0a0a;
+ color: #e0e0e0;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ }
+ /* ===== AIRY SPACE ===== */
+ :root {
+ --brutal-black: #0a0a0a;
+ --brutal-white: #f0f0f0;
+ --brutal-gray: #8a8a8a;
+ --brutal-accent: #ff3b3b;
+ --brutal-neon: #00ffc8;
+ --brutal-void: #1a1a2e;
+ --brutal-card-bg: #111118;
+ --brutal-border: 2px solid #2a2a2a;
+ --brutal-shadow: 4px 4px 0 rgba(255, 59, 59, 0.3);
+ --max-width: 1200px;
+ --gap: 2rem;
+ }
+ @media (max-width: 768px) {
+ :root {
+ --gap: 1.2rem;
+ }
+ }
+ /* ===== TYPOGRAPHY ===== */
+ h1, h2, h3 {
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -0.03em;
+ }
+ h1 {
+ font-size: clamp(2.4rem, 8vw, 4.8rem);
+ line-height: 0.95;
+ color: var(--brutal-white);
+ text-shadow: 2px 2px 0 var(--brutal-accent);
+ }
+ h2 {
+ font-size: clamp(1.8rem, 5vw, 3rem);
+ border-left: 6px solid var(--brutal-accent);
+ padding-left: 1rem;
+ margin: 2rem 0 1.2rem;
+ }
+ h3 {
+ font-size: 1.4rem;
+ margin: 1.5rem 0 0.8rem;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ color: #c0c0c0;
+ }
+ a {
+ color: var(--brutal-neon);
+ text-decoration: none;
+ border-bottom: 1px solid transparent;
+ transition: border 0.15s;
+ }
+ a:hover {
+ border-bottom-color: var(--brutal-neon);
+ }
+ ul {
+ list-style: none;
+ padding-left: 0;
+ }
+ ul li {
+ padding: 0.4rem 0;
+ border-bottom: 1px dashed #2a2a2a;
+ }
+ ul li::before {
+ content: "▸ ";
+ color: var(--brutal-accent);
+ font-weight: bold;
+ }
+ strong {
+ color: var(--brutal-white);
+ }
+ /* ===== LAYOUT ===== */
+ .container {
+ max-width: var(--max-width);
+ margin: 0 auto;
+ padding: 0 1.5rem;
+ }
+ /* ===== HEADER & NAV ===== */
+ header {
+ background: var(--brutal-void);
+ border-bottom: 3px solid var(--brutal-accent);
+ padding: 1rem 0;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .nav-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 1rem;
+ }
+ .logo {
+ font-size: 1.6rem;
+ font-weight: 900;
+ color: var(--brutal-white);
+ letter-spacing: -0.05em;
+ }
+ .logo span {
+ color: var(--brutal-accent);
+ }
+ .nav-links {
+ display: flex;
+ gap: 1.8rem;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+ .nav-links a {
+ color: #c0c0c0;
+ font-weight: 700;
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ border: none;
+ padding: 0.3rem 0;
+ border-bottom: 2px solid transparent;
+ transition: border 0.2s, color 0.2s;
+ }
+ .nav-links a:hover {
+ color: var(--brutal-white);
+ border-bottom-color: var(--brutal-accent);
+ }
+ .hamburger {
+ display: none;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 0.5rem;
+ }
+ .hamburger div {
+ width: 26px;
+ height: 3px;
+ background: var(--brutal-white);
+ margin: 5px 0;
+ transition: 0.3s;
+ }
+ @media (max-width: 768px) {
+ .hamburger {
+ display: block;
+ }
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ padding: 1rem 0;
+ gap: 1rem;
+ background: var(--brutal-void);
+ border-top: 1px solid #2a2a2a;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .nav-links a {
+ font-size: 1.1rem;
+ padding: 0.5rem 0;
+ }
+ }
+ /* ===== INFO HERO ===== */
+ .info-hero {
+ padding: 4rem 0 2rem;
+ border-bottom: 2px solid #2a2a2a;
+ position: relative;
+ }
+ .info-hero::after {
+ content: "● 마포 셔츠룸 ●";
+ position: absolute;
+ top: 0.5rem;
+ right: 1.5rem;
+ font-size: 0.9rem;
+ color: var(--brutal-gray);
+ letter-spacing: 0.2em;
+ opacity: 0.3;
+ }
+ .info-hero h1 {
+ margin-bottom: 0.8rem;
+ }
+ .info-hero p {
+ font-size: 1.15rem;
+ max-width: 700px;
+ border-left: 3px solid var(--brutal-neon);
+ padding-left: 1rem;
+ }
+ /* ===== INFO GRID ===== */
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: var(--gap);
+ padding: 3rem 0;
+ }
+ .info-card {
+ background: var(--brutal-card-bg);
+ border: var(--brutal-border);
+ padding: 1.8rem 1.4rem;
+ box-shadow: var(--brutal-shadow);
+ transition: transform 0.15s, box-shadow 0.15s;
+ }
+ .info-card:hover {
+ transform: translate(-2px, -2px);
+ box-shadow: 6px 6px 0 rgba(255, 59, 59, 0.4);
+ }
+ .info-card h3 {
+ font-size: 1.2rem;
+ margin-top: 0;
+ color: var(--brutal-accent);
+ border-bottom: 2px solid #2a2a2a;
+ padding-bottom: 0.5rem;
+ }
+ .info-card p {
+ font-size: 0.95rem;
+ }
+ .info-card .highlight {
+ color: var(--brutal-neon);
+ font-weight: 700;
+ }
+ .info-card .tel-link {
+ display: inline-block;
+ background: var(--brutal-accent);
+ color: #0a0a0a;
+ font-weight: 900;
+ padding: 0.6rem 1.4rem;
+ margin-top: 0.8rem;
+ border: none;
+ text-decoration: none;
+ transition: background 0.2s, color 0.2s;
+ }
+ .info-card .tel-link:hover {
+ background: var(--brutal-neon);
+ color: #0a0a0a;
+ }
+ /* ===== FAQ ===== */
+ .faq-section {
+ padding: 3rem 0 4rem;
+ border-top: 2px solid #2a2a2a;
+ }
+ .faq-item {
+ background: var(--brutal-card-bg);
+ border: var(--brutal-border);
+ padding: 1.4rem 1.5rem;
+ margin-bottom: 1.2rem;
+ }
+ .faq-item strong {
+ color: var(--brutal-accent);
+ display: block;
+ margin-bottom: 0.4rem;
+ font-size: 1.1rem;
+ }
+ .faq-item p {
+ margin: 0;
+ color: #b0b0b0;
+ }
+ /* ===== CTA ===== */
+ .cta-section {
+ text-align: center;
+ padding: 3rem 0;
+ border-top: 2px solid #2a2a2a;
+ }
+ .cta-section h2 {
+ border-left: none;
+ margin-top: 0;
+ }
+ .cta-section .btn {
+ display: inline-block;
+ background: var(--brutal-accent);
+ color: #0a0a0a;
+ font-weight: 900;
+ font-size: 1.1rem;
+ text-transform: uppercase;
+ padding: 1rem 2.5rem;
+ text-decoration: none;
+ border: 2px solid var(--brutal-accent);
+ transition: background 0.2s, color 0.2s, border 0.2s;
+ letter-spacing: 0.05em;
+ }
+ .cta-section .btn:hover {
+ background: transparent;
+ color: var(--brutal-accent);
+ }
+ /* ===== FOOTER ===== */
+ footer {
+ background: var(--brutal-void);
+ border-top: 3px solid var(--brutal-accent);
+ padding: 2rem 0;
+ text-align: center;
+ margin-top: auto;
+ }
+ footer p {
+ margin: 0;
+ color: var(--brutal-gray);
+ font-size: 0.85rem;
+ }
+ footer a {
+ color: var(--brutal-neon);
+ }
+ /* ===== RESPONSIVE ===== */
+ @media (max-width: 768px) {
+ .info-hero h1 {
+ font-size: 2.2rem;
+ }
+ .info-hero p {
+ font-size: 1rem;
+ }
+ .info-grid {
+ grid-template-columns: 1fr;
+ }
+ .faq-item {
+ padding: 1rem;
+ }
+ }
+ </style>
   <meta property="og:url" content="https://sf-t3-1779642675702-484.maphoshirts.today/about.html">
   <meta property="og:title" content="마포 셔츠룸 | 정보 — 주소·가격·운영시간·위치">
   <meta property="og:description" content="마포 셔츠룸 정보 페이지. 위치, 가격, 운영시간, 연락처 — 거친 커피와 자유로운 영혼을 위한 모든 것. 마포 힙플레이스의 진짜 정보는 여기뿐.">
@@ -356,21 +354,21 @@
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="container nav-inner">
-            <div class="logo">마포<span>셔츠룸</span></div>
-            <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="메뉴 열기">
-                <div></div><div></div><div></div>
-            </button>
-            <nav class="nav-links">
-                <a href="/">홈</a>
-                <a href="/menu">메뉴</a>
-                <a href="/info">정보</a>
-                <a href="/gallery">갤러리</a>
-                <a href="/contact">문의</a>
-            </nav>
-        </div>
-    </header>
+ <header>
+ <div class="container nav-inner">
+ <div class="logo">마포<span>셔츠룸</span></div>
+ <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="메뉴 열기">
+ <div></div><div></div><div></div>
+ </button>
+ <nav class="nav-links">
+ <a href="/">홈</a>
+ <a href="/menu">메뉴</a>
+ <a href="/info">정보</a>
+ <a href="/gallery">갤러리</a>
+ <a href="/contact">문의</a>
+ </nav>
+ </div>
+ </header>
 
 <main>
 <div class="container">
