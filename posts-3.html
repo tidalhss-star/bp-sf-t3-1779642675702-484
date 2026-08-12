@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (3/5) · sf-t3-1779642675702-484</title>
+  <meta name="description" content="sf-t3-1779642675702-484에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-484.maphoshirts.today/posts-3.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* ============================================================
+ BRUTALIST AVANT-GARDE — STREET BRUTALIST + NEON-VOID
+ ============================================================ */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+ background: #0a0a0a;
+ color: #e0e0e0;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ }
+ /* ===== AIRY SPACE ===== */
+ :root {
+ --brutal-black: #0a0a0a;
+ --brutal-white: #f0f0f0;
+ --brutal-gray: #8a8a8a;
+ --brutal-accent: #ff3b3b;
+ --brutal-neon: #00ffc8;
+ --brutal-void: #1a1a2e;
+ --brutal-card-bg: #111118;
+ --brutal-border: 2px solid #2a2a2a;
+ --brutal-shadow: 4px 4px 0 rgba(255, 59, 59, 0.3);
+ --max-width: 1200px;
+ --gap: 2rem;
+ }
+ @media (max-width: 768px) {
+ :root {
+ --gap: 1.2rem;
+ }
+ }
+ /* ===== TYPOGRAPHY ===== */
+ h1, h2, h3 {
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -0.03em;
+ }
+ h1 {
+ font-size: clamp(2.4rem, 8vw, 4.8rem);
+ line-height: 0.95;
+ color: var(--brutal-white);
+ text-shadow: 2px 2px 0 var(--brutal-accent);
+ }
+ h2 {
+ font-size: clamp(1.8rem, 5vw, 3rem);
+ border-left: 6px solid var(--brutal-accent);
+ padding-left: 1rem;
+ margin: 2rem 0 1.2rem;
+ }
+ h3 {
+ font-size: 1.4rem;
+ margin: 1.5rem 0 0.8rem;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ color: #c0c0c0;
+ }
+ a {
+ color: var(--brutal-neon);
+ text-decoration: none;
+ border-bottom: 1px solid transparent;
+ transition: border 0.15s;
+ }
+ a:hover {
+ border-bottom-color: var(--brutal-neon);
+ }
+ ul {
+ list-style: none;
+ padding-left: 0;
+ }
+ ul li {
+ padding: 0.4rem 0;
+ border-bottom: 1px dashed #2a2a2a;
+ }
+ ul li::before {
+ content: "▸ ";
+ color: var(--brutal-accent);
+ font-weight: bold;
+ }
+ strong {
+ color: var(--brutal-white);
+ }
+ /* ===== LAYOUT ===== */
+ .container {
+ max-width: var(--max-width);
+ margin: 0 auto;
+ padding: 0 1.5rem;
+ }
+ /* ===== HEADER & NAV ===== */
+ header {
+ background: var(--brutal-void);
+ border-bottom: 3px solid var(--brutal-accent);
+ padding: 1rem 0;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .nav-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 1rem;
+ }
+ .logo {
+ font-size: 1.6rem;
+ font-weight: 900;
+ color: var(--brutal-white);
+ letter-spacing: -0.05em;
+ }
+ .logo span {
+ color: var(--brutal-accent);
+ }
+ .nav-links {
+ display: flex;
+ gap: 1.8rem;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+ .nav-links a {
+ color: #c0c0c0;
+ font-weight: 700;
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ border: none;
+ padding: 0.3rem 0;
+ border-bottom: 2px solid transparent;
+ transition: border 0.2s, color 0.2s;
+ }
+ .nav-links a:hover {
+ color: var(--brutal-white);
+ border-bottom-color: var(--brutal-accent);
+ }
+ .hamburger {
+ display: none;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 0.5rem;
+ }
+ .hamburger div {
+ width: 26px;
+ height: 3px;
+ background: var(--brutal-white);
+ margin: 5px 0;
+ transition: 0.3s;
+ }
+ @media (max-width: 768px) {
+ .hamburger {
+ display: block;
+ }
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ padding: 1rem 0;
+ gap: 1rem;
+ background: var(--brutal-void);
+ border-top: 1px solid #2a2a2a;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .nav-links a {
+ font-size: 1.1rem;
+ padding: 0.5rem 0;
+ }
+ }
+ /* ===== INFO HERO ===== */
+ .info-hero {
+ padding: 4rem 0 2rem;
+ border-bottom: 2px solid #2a2a2a;
+ position: relative;
+ }
+ .info-hero::after {
+ content: "● 마포 셔츠룸 ●";
+ position: absolute;
+ top: 0.5rem;
+ right: 1.5rem;
+ font-size: 0.9rem;
+ color: var(--brutal-gray);
+ letter-spacing: 0.2em;
+ opacity: 0.3;
+ }
+ .info-hero h1 {
+ margin-bottom: 0.8rem;
+ }
+ .info-hero p {
+ font-size: 1.15rem;
+ max-width: 700px;
+ border-left: 3px solid var(--brutal-neon);
+ padding-left: 1rem;
+ }
+ /* ===== INFO GRID ===== */
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: var(--gap);
+ padding: 3rem 0;
+ }
+ .info-card {
+ background: var(--brutal-card-bg);
+ border: var(--brutal-border);
+ padding: 1.8rem 1.4rem;
+ box-shadow: var(--brutal-shadow);
+ transition: transform 0.15s, box-shadow 0.15s;
+ }
+ .info-card:hover {
+ transform: translate(-2px, -2px);
+ box-shadow: 6px 6px 0 rgba(255, 59, 59, 0.4);
+ }
+ .info-card h3 {
+ font-size: 1.2rem;
+ margin-top: 0;
+ color: var(--brutal-accent);
+ border-bottom: 2px solid #2a2a2a;
+ padding-bottom: 0.5rem;
+ }
+ .info-card p {
+ font-size: 0.95rem;
+ }
+ .info-card .highlight {
+ color: var(--brutal-neon);
+ font-weight: 700;
+ }
+ .info-card .tel-link {
+ display: inline-block;
+ background: var(--brutal-accent);
+ color: #0a0a0a;
+ font-weight: 900;
+ padding: 0.6rem 1.4rem;
+ margin-top: 0.8rem;
+ border: none;
+ text-decoration: none;
+ transition: background 0.2s, color 0.2s;
+ }
+ .info-card .tel-link:hover {
+ background: var(--brutal-neon);
+ color: #0a0a0a;
+ }
+ /* ===== FAQ ===== */
+ .faq-section {
+ padding: 3rem 0 4rem;
+ border-top: 2px solid #2a2a2a;
+ }
+ .faq-item {
+ background: var(--brutal-card-bg);
+ border: var(--brutal-border);
+ padding: 1.4rem 1.5rem;
+ margin-bottom: 1.2rem;
+ }
+ .faq-item strong {
+ color: var(--brutal-accent);
+ display: block;
+ margin-bottom: 0.4rem;
+ font-size: 1.1rem;
+ }
+ .faq-item p {
+ margin: 0;
+ color: #b0b0b0;
+ }
+ /* ===== CTA ===== */
+ .cta-section {
+ text-align: center;
+ padding: 3rem 0;
+ border-top: 2px solid #2a2a2a;
+ }
+ .cta-section h2 {
+ border-left: none;
+ margin-top: 0;
+ }
+ .cta-section .btn {
+ display: inline-block;
+ background: var(--brutal-accent);
+ color: #0a0a0a;
+ font-weight: 900;
+ font-size: 1.1rem;
+ text-transform: uppercase;
+ padding: 1rem 2.5rem;
+ text-decoration: none;
+ border: 2px solid var(--brutal-accent);
+ transition: background 0.2s, color 0.2s, border 0.2s;
+ letter-spacing: 0.05em;
+ }
+ .cta-section .btn:hover {
+ background: transparent;
+ color: var(--brutal-accent);
+ }
+ /* ===== FOOTER ===== */
+ footer {
+ background: var(--brutal-void);
+ border-top: 3px solid var(--brutal-accent);
+ padding: 2rem 0;
+ text-align: center;
+ margin-top: auto;
+ }
+ footer p {
+ margin: 0;
+ color: var(--brutal-gray);
+ font-size: 0.85rem;
+ }
+ footer a {
+ color: var(--brutal-neon);
+ }
+ /* ===== RESPONSIVE ===== */
+ @media (max-width: 768px) {
+ .info-hero h1 {
+ font-size: 2.2rem;
+ }
+ .info-hero p {
+ font-size: 1rem;
+ }
+ .info-grid {
+ grid-template-columns: 1fr;
+ }
+ .faq-item {
+ padding: 1rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (3/5) · sf-t3-1779642675702-484">
+  <meta property="og:description" content="sf-t3-1779642675702-484에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-484.maphoshirts.today/posts-3.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container nav-inner">
+ <div class="logo">마포<span>셔츠룸</span></div>
+ <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="메뉴 열기">
+ <div></div><div></div><div></div>
+ </button>
+ <nav class="nav-links">
+ <a href="/">홈</a>
+ <a href="/menu">메뉴</a>
+ <a href="/info">정보</a>
+ <a href="/gallery">갤러리</a>
+ <a href="/contact">문의</a>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 98개 · 3/5 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0274.html">마포 셔츠룸 탐색 전 알아두어야 할 지역 정보 확인 안내</a>
+        <p class="post-item__summary">서울 마포 지역은 문화 공간과 상권이 유기적으로 연결되어 있어 특정 목적지를 찾기 전 주변 환경과 정보를 종합적으로 파악하는 과정이 필요합니다. 힙플레이스 카페를 비롯해 다양한 상업 공간이 늘어선 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0275.html">마포 지역의 상권 특성과 세심한 외모 관리 정보 안내</a>
+        <p class="post-item__summary">서울특별시 마포구 일대는 다채로운 문화 공간과 힙플레이스 카페가 늘어서 있어 많은 이들이 방문하는 주요 상권 가운데 하나입니다. 젊은층부터 다양한 연령대의 유동 인구가 모이는 지역적 특징을 바탕으로</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0276.html">마포 힙플레이스 카페 및 모임 공간 이용 안내</a>
+        <p class="post-item__summary">마포 지역은 독창적인 인테리어와 차분한 분위기를 갖춘 힙플레이스 카페들이 다양하게 조성된 대표적인 상권입니다. 일상적인 대화는 물론 비즈니스 미팅이나 사교 모임을 진행하기에도 정돈된 환경을 제공하며</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0277.html">마포 셔츠룸 이용 안내 및 사전 준비 사항</a>
+        <p class="post-item__summary">마포 지역은 독특한 분위기의 힙플레이스 카페와 다채로운 문화 공간이 모여 있는 곳입니다. 이곳에서 마포 셔츠룸 정보를 찾는 방문객은 공간의 특성과 전반적인 이용 방식을 사전에 파악하고자 합니다. 특</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0278.html">마포 지역 모임 공간 및 상권 특징 안내</a>
+        <p class="post-item__summary">마포 일대는 독특한 분위기의 힙플레이스 카페와 문화 공간이 밀집하여 젊은 층과 직장인의 방문이 많은 상권입니다. 최근에는 모임이나 미팅을 위해 인근 지역을 찾는 수요가 꾸준히 이어지고 있습니다. 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0279.html">마포 지역 문화와 마포 셔츠룸 관련 정보 안내</a>
+        <p class="post-item__summary">마포 지역은 독특한 감성과 개성을 지닌 힙플레이스 카페와 다양한 상권이 어우러져 많은 사람들이 찾는 문화적 거점입니다. 홍대, 합정, 상수 일대로 이어지는 골목 곳곳에는 감각적인 인테리어와 특색 있</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0280.html">마포 상권의 변화와 업종별 정보 안내</a>
+        <p class="post-item__summary">서울특별시 마포구는 독특한 분위기를 가진 상권이 형성되어 있는 대표적인 문화 및 상업 중심지입니다. 최근 마포 일대는 개성 있는 콘셉트를 앞세운 힙플레이스 카페가 늘어나며 주요 휴식 공간으로 자리 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0281.html">마포 셔츠룸 관련 정보 탐색 및 이용 안내</a>
+        <p class="post-item__summary">마포 지역은 감성적인 카페와 활기찬 상권이 함께 자리한 곳으로 저녁 시간대 유흥 문화 관련 정보 탐색도 꾸준히 이루어집니다. 이 중에서 마포 셔츠룸 관련 정보를 찾는 경우 사전에 공간의 성격과 전반</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0282.html">마포 지역 상권 특징과 마포 셔츠룸 정보 안내</a>
+        <p class="post-item__summary">마포 지역은 독특한 분위기의 힙플레이스 카페와 다채로운 야간 문화가 공존하는 공간으로 다양한 상권이 형성되어 있습니다. 이 지역을 찾는 이용자들은 낮 시간대에는 감성적인 디저트 공간을 탐색하고 밤 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0283.html">마포 힙플레이스 카페 문화와 밤거리 트렌드 안내</a>
+        <p class="post-item__summary">서울 마포 지역은 개성 있는 힙플레이스 카페들과 다채로운 상권이 공존하는 공간입니다. 연남동과 합정동, 상수동을 중심으로 형성된 카페 상권은 낮 시간에 방문객들의 발길을 이끄는 핵심 요소입니다. 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0284.html">마포 셔츠룸 관련 지역 정보 및 유흥 트렌드 안내</a>
+        <p class="post-item__summary">서울 마포구는 홍대, 상수, 연남 등 다채로운 상권이 형성되어 있어 독특한 감성의 힙플레이스 카페와 다양한 야간 여가 문화가 공존하는 대표적 문화 중심지입니다. 마포 지역 여가 공간을 살펴볼 때에는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0285.html">마포 지역 공간 문화와 셔츠룸 관련 정보 안내</a>
+        <p class="post-item__summary">마포 지역은 독특한 감성과 문화적 다양성이 공존하는 상권으로 널리 알려져 있습니다. 홍대와 합정, 상수 일대를 중심으로 개성 있는 힙플레이스 카페와 다채로운 유흥 공간들이 맞물려 발전하면서 다양한 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0286.html">마포 지역 유흥 문화 탐색과 안전한 이용 지침 안내</a>
+        <p class="post-item__summary">마포 지역은 독특한 감성의 힙플레이스 카페와 다양한 야간 유흥 문화가 함께 어우러지는 대표적인 공간입니다. 젊은 층부터 직장인까지 많은 인파가 찾는 곳인 만큼, 최근 마포 셔츠룸 관련 정보를 탐색하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0287.html">마포 힙플레이스 카페 상권과 야간 문화 정보 안내</a>
+        <p class="post-item__summary">서울 마포구 일대는 다양한 문화 공간과 힙플레이스 카페가 밀집하여 많은 방문객이 찾는 중심 지역입니다. 낮 시간대에는 감성적인 카페와 디저트 매장이 활기를 띠고, 저녁 이후에는 다채로운 모임 공간과</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0288.html">마포 상권의 공간적 특성과 연남동 케어 정보 안내</a>
+        <p class="post-item__summary">마포 지역은 특색 있는 힙플레이스 카페와 다양한 형태의 상업 공간이 결합되어 주목받는 상권입니다. 이 일대에서는 취향과 목적에 따라 여러 매장 정보를 탐색하는 이들이 많으며, 마포 셔츠룸 정보를 확</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0289.html">마포 셔츠룸 이용 안내 및 상권 정보 비교</a>
+        <p class="post-item__summary">마포 지역은 감성적인 힙플레이스 카페와 다채로운 상권이 공존하여 저녁 시간 모임을 찾는 이들의 발길이 이어지는 곳입니다. 마포 셔츠룸 정보를 검색하는 이용자들은 분위기와 이용 수칙을 미리 확인하려는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0290.html">마포 셔츠룸 관련 정보 안내 및 접대 장소 선택 요령</a>
+        <p class="post-item__summary">서울 마포 지역은 다채로운 상권과 힙플레이스 카페, 문화 공간이 적절히 조화를 이루는 대표적인 장소입니다. 여러 모임이나 비즈니스 미팅을 준비하며 마포 셔츠룸 관련 정보를 탐색하려는 이용자 수요도 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0291.html">마포 지역 상권과 비즈니스 모임 장소 선택 안내</a>
+        <p class="post-item__summary">서울 마포 지역은 홍대와 합정, 상암 등 다양한 문화와 상업 지구가 어우러진 중심지입니다. 최근 마포 상권은 감각적인 인테리어와 특색 있는 음료를 선보이는 힙플레이스 카페부터 비즈니스 미팅과 모임을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0292.html">마포 셔츠룸 이용 안내 및 가격 비교 정보 활용법</a>
+        <p class="post-item__summary">마포 지역은 감성적인 힙플레이스 카페와 다양한 상업 시설이 어우러져 많은 이들이 방문하는 상권입니다. 저녁 시간대 모임이나 유흥 공간을 찾는 과정에서 마포 셔츠룸에 대한 정보를 찾아보는 사례도 적지</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260807-0293.html">마포 지역 문화 탐방 및 유흥 시설 이용 안내</a>
+        <p class="post-item__summary">서울 마포 일대는 감각적인 힙플레이스 카페들이 밀집하여 방문객의 발길이 이어지는 대표적인 문화 공간입니다. 개성 있는 카페 거리와 상권이 결합해 연남동과 합정동을 중심으로 다양한 야간 여가 문화와 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <span class="pager__current">3</span>
+      <a class="pager__link" href="posts-4.html">4</a>
+      <a class="pager__link" href="posts-5.html">5</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
